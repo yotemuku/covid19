@@ -1,9 +1,14 @@
 {
     "newsItems": [
         {
+            "date": "2020/04/23",
+            "url": "http://www.city.higashiosaka.lg.jp/",
+            "text": "【テスト追記】東大阪市（外部サイト)"
+        },
+        {
             "date": "2020/04/15",
             "url": "http://www.city.higashiosaka.lg.jp/0000026888.html",
-            "text": "新型コロナウイルス関連の報道発表について（外部サイト）マニュアル確認"
+            "text": "新型コロナウイルス関連の報道発表について（外部サイト)"
         }
     ]
 }
