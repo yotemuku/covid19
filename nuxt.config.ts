@@ -12,7 +12,7 @@ const config: Configuration = {
     htmlAttrs: {
       prefix: 'og: http://ogp.me/ns#'
     },
-    titleTemplate: '%s | 東大阪市 新型コロナウイルス感染症対策サイト',
+    titleTemplate: '%s | 東大阪市 新型コロナウイルス感染症対策サイト（非公式）',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -25,7 +25,7 @@ const config: Configuration = {
       {
         hid: 'og:site_name',
         property: 'og:site_name',
-        content: '東大阪市 新型コロナウイルス感染症対策サイト'
+        content: '東大阪市 新型コロナウイルス感染症対策サイト（非公式）'
       },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
@@ -36,7 +36,7 @@ const config: Configuration = {
       {
         hid: 'og:title',
         property: 'og:title',
-        content: '東大阪市 新型コロナウイルス感染症対策サイト'
+        content: '東大阪市 新型コロナウイルス感染症対策サイト（非公式）'
       },
       {
         hid: 'og:description',
@@ -62,7 +62,7 @@ const config: Configuration = {
       {
         hid: 'apple-mobile-web-app-title',
         name: 'apple-mobile-web-app-title',
-        content: '東大阪市コロナウィルス対策サイト'
+        content: '東大阪市コロナウィルス対策サイト（非公式）'
       }
     ],
     link: [
@@ -170,7 +170,7 @@ const config: Configuration = {
     hardSource: process.env.NODE_ENV === 'development'
   },
   manifest: {
-    name: '東大阪市 新型コロナウイルス感染症対策サイト',
+    name: '東大阪市 新型コロナウイルス感染症対策サイト（非公式）',
     theme_color: '#364c97',
     background_color: '#ffffff',
     display: 'standalone',
