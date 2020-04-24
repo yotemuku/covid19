@@ -1,6 +1,7 @@
 import { Configuration } from '@nuxt/types'
 const purgecss = require('@fullhuman/postcss-purgecss')
 const autoprefixer = require('autoprefixer')
+const environment = process.env.NODE_ENV || 'development'
 
 const config: Configuration = {
   mode: 'universal',
@@ -106,7 +107,8 @@ const config: Configuration = {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv',
+    //'@nuxtjs/dotenv',
+    ['@nuxtjs/dotenv', { filename: `.env.${environment}` }],
     [
       'nuxt-i18n',
       {

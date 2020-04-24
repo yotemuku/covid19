@@ -19,6 +19,7 @@
         </v-container>
       </div>
     </div>
+    <development-mode-mark />
   </v-app>
 </template>
 <script lang="ts">
@@ -26,6 +27,7 @@ import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
 import ScaleLoader from 'vue-spinner/src/ScaleLoader.vue'
 import SideNavigation from '@/components/SideNavigation.vue'
+import DevelopmentModeMark from '@/components/DevelopmentModeMark.vue'
 
 type LocalData = {
   isOpenNavigation: boolean
@@ -34,6 +36,7 @@ type LocalData = {
 
 export default Vue.extend({
   components: {
+    DevelopmentModeMark,
     ScaleLoader,
     SideNavigation
   },
