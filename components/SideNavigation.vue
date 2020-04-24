@@ -61,7 +61,7 @@
     "Navi Close": "サイドメニュー項目を閉じる",
     "Tokyo": "東大阪市",
     "COVID-19": "新型コロナウイルス感染症",
-    "Measures site": "対策サイト",
+    "Measures site": "対策サイト（非公式）",
     "Tokyo Metropolitan Government": "東大阪市",
     "Tokyo COVID-19 Task Force": "新型コロナウイルス感染症対策本部",
     "The latest updates": "市内の最新感染動向",

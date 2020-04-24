@@ -1,32 +1,24 @@
-# 大阪府 新型コロナウイルス感染症対策サイト
+# 東大阪市 新型コロナウイルス感染症対策サイト（非公式）
 
 ![](https://github.com/codeforosaka/covid19/workflows/production%20deploy/badge.svg)
 
-[大阪府 新型コロナウイルス感染症対策サイト](https://covid19-osaka.info/)
-
-## 貢献の仕方
-Issues にあるいろいろな修正にご協力いただけると嬉しいです。 
-
-詳しくは[貢献の仕方](./.github/CONTRIBUTING.md)を御覧ください。
-
-## 行動原則
-詳しくは[サイト構築にあたっての行動原則](./.github/CODE_OF_CONDUCT.md)を御覧ください。
+[東大阪市 新型コロナウイルス感染症対策サイト（非公式）](https://higashiosaka-stop-covid19.netlify.app/)
 
 ## ライセンス
 本ソフトウェアは、[MITライセンス](./LICENSE.txt)の元提供されています。
 
 ## このサイトの大元
 
-### 東京都 新型コロナウイルス感染症対策サイト
-[サイトへのリンク](https://stopcovid19.metro.tokyo.lg.jp/)
+### 大阪府 新型コロナウイルス感染症対策サイト
+[サイトへのリンク](https://covid19-osaka.info/)
 
-[Githubへのリンク](https://github.com/tokyo-metropolitan-gov/covid19)
+[Githubへのリンク](https://github.com/codeforosaka/covid19)
 
 ## 開発者向け情報
 
 ### data.jsonの説明
 * JSON形式のデータです
-* 今は手作業で修正しています（大阪府の方がプルリクを投げてくれることが多いです）
+* 元のエクセルから自動生成され、差分が発生した場合にPull Requestを作成します。
 
 #### patients
 * 感染者数
@@ -79,37 +71,10 @@ Issues にあるいろいろな修正にご協力いただけると嬉しいで�
 
 - 必要となるNode.jsのバージョン: 10.19.0以上
 
-**yarn を使う場合**
-``` bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-```
-
-**docker compose を使う場合**
-```bash
-# serve with hot reload at localhost:3000
-$ docker-compose up --build
-```
-
-### `Cannot find module ****` と怒られた時
-
-**yarn を使う場合**
-```
-$ yarn install
-```
-
-**docker compose を使う場合**
-```bash
-$ docker-compose run --rm app yarn install
-```
-
 ### ステージング・本番環境への反映
 
-`master` ブランチがアップデートされると、自動的に `production` ブランチにHTML類がbuildされます。そして、本番サイト https://covid19-osaka.info/ が更新されます。
+`master` ブランチがアップデートされると、自動的に `production` ブランチにHTML類がbuildされます。そして、本番サイト https://higashiosaka-stop-covid19.netlify.app/ が更新されます。
 
-`staging` ブランチは大阪では運用しません。developからmasterにプルリクを投げてください
+`staging` ブランチは運用しません。developからmasterにプルリクを投げてください
 
-`development` ブランチがアップデートされると、自動的に `dev-pages` ブランチにHTML類がbuildされます。そして、開発用サイト https://dev-covid19-osaka.netlify.com/ が更新されます。
+`development` ブランチがアップデートされると、自動的に `dev-pages` ブランチにHTML類がbuildされます。そして、開発用サイト https://develop-hosakacovid19.netlify.app/ が更新されます。
