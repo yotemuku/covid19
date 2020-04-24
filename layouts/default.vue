@@ -19,7 +19,6 @@
         </v-container>
       </div>
     </div>
-    <development-mode-mark />
   </v-app>
 </template>
 <script lang="ts">
