@@ -1,6 +1,11 @@
 {
     "newsItems": [
-        {
+      {
+            "date": "2020/05/11",
+            "url": "https://www.city.higashiosaka.lg.jp/0000027226.html",
+            "text": "市内の新型コロナウイルス感染動向（外部サイト)"
+        },
+      {
             "date": "2020/04/15",
             "url": "http://www.city.higashiosaka.lg.jp/0000026888.html",
             "text": "新型コロナウイルス関連の報道発表について（外部サイト)"
