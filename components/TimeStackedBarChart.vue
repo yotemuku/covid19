@@ -12,7 +12,7 @@
     <template v-slot:infoPanel>
       <data-view-basic-info-panel
         :l-text="displayInfo.lText"
-        :s-text="displayInfo.sText"
+        :s-text-list="[displayInfo.sText]"
         :unit="displayInfo.unit"
       />
     </template>
@@ -78,18 +78,22 @@ export default {
       if (this.dataKind === 'transition') {
         return {
           lText: this.sum(this.pickLastNumber(this.chartData)).toLocaleString(),
-          sText: `${this.labels[this.labels.length - 1]} の合計`,
+          sText: `${this.$t('{date} の合計', {
+            date: this.labels[this.labels.length - 1]
+          })}`,
           unit: this.unit
         }
       }
       return {
         lText: this.sum(this.cumulativeSum(this.chartData)).toLocaleString(),
-        sText: `${this.labels[this.labels.length - 1]} の全体累計`,
+        sText: `${this.$t('{date} の全体累計', {
+          date: this.labels[this.labels.length - 1]
+        })}`,
         unit: this.unit
       }
     },
     displayData() {
-      const colorArray = ['#009a5a', '#0ceb00']
+      const colorArray = ['#364c97', '#0076eb']
       if (this.dataKind === 'transition') {
         return {
           labels: this.labels,
@@ -130,23 +134,20 @@ export default {
             label: tooltipItem => {
               const labelText =
                 this.dataKind === 'transition'
-                  ? `${sumArray[tooltipItem.index]}${unit}（府管轄保健所: ${
-                      data[0][tooltipItem.index]
-                    }/政令中核市保健所: ${data[1][tooltipItem.index]}）`
-                  : `${
-                      cumulativeSumArray[tooltipItem.index]
-                    }${unit}（府管轄保健所: ${
-                      cumulativeData[0][tooltipItem.index]
-                    }/政令中核市保健所: ${
-                      cumulativeData[1][tooltipItem.index]
-                    }）`
-              return labelText
-            },
-            title(tooltipItem, data) {
-              return data.labels[tooltipItem[0].index].replace(
-                /(\w+)\/(\w+)/,
-                '$1月$2日'
-              )
+                  ? `${sumArray[tooltipItem.index]}${unit}（${this.$t(
+                      '府管轄保健所'
+                    )}: ${data[0][tooltipItem.index]}/${this.$t(
+                      '東大阪市'
+                    )}: ${data[1][tooltipItem.index]}）`
+                  : `${cumulativeSumArray[tooltipItem.index]}${unit}（${this.$t(
+                      '府管轄保健所'
+                    )}: ${cumulativeData[0][tooltipItem.index]}/${this.$t(
+                      '東大阪市'
+                    )}: ${cumulativeData[1][tooltipItem.index]}）`
+              // 長い場合 スラッシュで改行
+              return labelText.length < 50
+                ? labelText
+                : labelText.split(/(?=\/)/g)
             }
           }
         },
