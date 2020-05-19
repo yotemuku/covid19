@@ -76,7 +76,7 @@
       </v-col>
       <v-col cols="12" md="6" class="DataCard">
         <time-bar-chart
-          title="府民向け相談窓口への相談件数"
+          title="市民向け相談窓口への相談件数"
           :title-id="'number-of-contacts1'"
           :chart-id="'time-bar-chart-inspections'"
           :chart-data="contactsGraph"
