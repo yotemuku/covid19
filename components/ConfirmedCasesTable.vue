@@ -27,10 +27,10 @@
       fill="#009a5a"
       mask="url(#path-1-inside-1)"
     />
-    <text x="102" y="75" fill="#009a5a" font-size="11" font-weight="700">
+    <text x="104" y="74" fill="#009a5a" font-size="11" font-weight="700">
         回復・
     </text>
-    <text x="102" y="86" fill="#009a5a" font-size="11" font-weight="700">
+    <text x="104" y="86" fill="#009a5a" font-size="11" font-weight="700">
         調整中
     </text>
     <path
