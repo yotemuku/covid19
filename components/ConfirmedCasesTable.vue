@@ -27,10 +27,10 @@
       fill="#009a5a"
       mask="url(#path-1-inside-1)"
     />
-    <text x="104" y="74" fill="#009a5a" font-size="10" font-weight="500">
+    <text x="105" y="74" fill="#009a5a" font-size="10" font-weight="500">
         回復・
     </text>
-    <text x="104" y="86" fill="#009a5a" font-size="10" font-weight="500">
+    <text x="105" y="86" fill="#009a5a" font-size="10" font-weight="500">
         調整中
     </text>
     <path
@@ -101,7 +101,7 @@
     <text x="59" y="86" fill="#009a5a" font-size="10" font-weight="500">
         (累積)
     </text>
-    <text x="210" y="86" fill="#009a5a" font-size="10" font-weight="500">
+    <text x="208" y="86" fill="#009a5a" font-size="10" font-weight="500">
         重症
     </text>
     <rect
@@ -120,10 +120,10 @@
       stroke="#009a5a"
       stroke-width="2"
     />
-    <text x="300" y="74" fill="#009a5a" font-size="9" font-weight="500">
+    <text x="296" y="74" fill="#009a5a" font-size="9" font-weight="500">
         陰性確認済
     </text>
-    <text x="300" y="85" fill="#009a5a" font-size="9" font-weight="500">
+    <text x="296" y="85" fill="#009a5a" font-size="8" font-weight="500">
         (退院者累計)
     </text>
     <text
@@ -174,7 +174,7 @@
       <tspan>{{ 退院 }}</tspan>
       <tspan class="unit" dx="-3">人</tspan>
     </text>
-    <text x="256" y="86" fill="#009a5a" font-size="10" font-weight="500">
+    <text x="258" y="86" fill="#009a5a" font-size="10" font-weight="500">
         死亡
     </text>
   </svg>
