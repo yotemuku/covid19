@@ -97,13 +97,13 @@
       fill="#009a5a"
       mask="url(#path-10-inside-2)"
     />
-    <text x="54" y="74" fill="#4D4D4D" font-size="10" font-weight="700">
+    <text x="53" y="74" fill="#009a5a" font-size="10" font-weight="700">
         陽性者数
     </text>
-    <text x="54" y="86" fill="#4D4D4D" font-size="10" font-weight="700">
+    <text x="58" y="86" fill="#009a5a" font-size="10" font-weight="700">
         (累積)
     </text>
-    <text x="204" y="86" fill="#4D4D4D" font-size="10" font-weight="700">
+    <text x="215" y="86" fill="#009a5a" font-size="10" font-weight="700">
         重症
     </text>
     <rect
