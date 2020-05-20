@@ -11,7 +11,7 @@ const headers = [
 
 type DataType = {
   No: number
-  リリース日: Date
+  リリース日: Date | string
   職業: string | null
   年代: string | null
   性別: '男性' | '女性'
