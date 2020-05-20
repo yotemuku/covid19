@@ -20,7 +20,7 @@ MAIN_SUMMARY_INIT = {
             "value": 0,
             "children": [
                 {
-                    "attr": "入院／入院調整中",
+                    "attr": "回復・調整中",
                     "value": 0,
                     "children": [
                         {
