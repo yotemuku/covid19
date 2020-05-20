@@ -103,7 +103,7 @@ class DataJson:
             )
             data["性別"] = self.patients_sheet.cell(row=i, column=4).value
             data["退院"] = "○" if "退院" in str(self.patients_sheet.cell(row=i, column=8).value) else ""
-            data["date"] = release_date.strftime("%Y-%m-%d") if isinstance(release_str, int) else release_date
+            data["date"] = excel_date(release_str).strftime("%Y-%m-%d") if isinstance(release_str, int) else release_date
             self._patients_json["data"].append(data)
 
     def make_patients_summary(self) -> None:
