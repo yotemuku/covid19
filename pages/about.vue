@@ -40,46 +40,6 @@
       <br />
       ただし、クッキーを受け入れない設定をされている場合は、当サイトの機能が正常に動作しない場合がございます。
     </TextCard>
-    <TextCard title="Google Analyticsの利用について">
-      当サイトでは、サービス向上やWebサイトの改善のためにGoogleの提供するアクセス分析のツールであるGoogle
-      Analyticsを利用した計測を行っております。<br />
-      Google
-      Analyticsは、当サイトが発行するクッキー(Cookie)を利用して、個人を特定する情報を含まずにWebサイトの利用データ（アクセス状況、トラフィック、閲覧環境など）を収集しております。クッキー(Cookie)の利用に関してはGoogleのプライバシーポリシーと規約に基づいております。<br />
-      取得したデータはWebサイト利用状況の分析、サイト運営者へのレポートの作成、その他のサービスの提供に関わる目的に限り、これを使用します。<br />
-      <br />
-      Google
-      Analyticsの利用規約及びプライバシーポリシーに関する説明については、Google
-      Analyticsのサイトをご覧ください。<br />
-      <ul>
-        <li>
-          <a
-            href="https://marketingplatform.google.com/about/analytics/terms/jp"
-            target="_blank"
-            rel="noopener"
-          >
-            Google Analytics利用規約
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://policies.google.com/privacy?hl=ja"
-            target="_blank"
-            rel="noopener"
-          >
-            Googleのプライバシーポリシー
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://support.google.com/analytics/answer/6004245"
-            target="_blank"
-            rel="noopener"
-          >
-            Google Analyticsに関する詳細情報
-          </a>
-        </li>
-      </ul>
-    </TextCard>
     <TextCard title="免責事項">
       当サイトに掲載されている情報の正確性については万全を期していますが、大阪府は利用者が当サイトの情報を用いて行う一切の行為について責任を負うものではありません。<br />
       <br />
