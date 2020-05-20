@@ -6,7 +6,7 @@
     xmlns="http://www.w3.org/2000/svg"
     role="img"
     :aria-label="
-      ariaLabel(検査実施件数, 陽性物数(累積), 回復・調整中, 軽症・無症状, 重症, 死亡, 退院確認済)
+      ariaLabel(検査実施件数, 陽性物数(累積), 回復調整中, 軽症無症状, 重症, 死亡, 退院確認済)
     "
   >
     <mask id="path-1-inside-1" fill="white">
@@ -28,7 +28,7 @@
       mask="url(#path-1-inside-1)"
     />
     <text x="102" y="75" fill="#009a5a" font-size="11" font-weight="700">
-        回復・
+        回復
     </text>
 	<text x="102" y="85" fill="blue" font-size="11" font-weight="700">
 		調整中
