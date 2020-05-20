@@ -89,11 +89,11 @@ class DataJson:
         }
         for i in range(3, self.patients_count):
             data = {}
-			release_str = self.patients_sheet.cell(row=i, column=2).value
+            release_str = self.patients_sheet.cell(row=i, column=2).value
             release_date = excel_date(release_str).isoformat() + ".000Z" if release_str.isdecimal() else release_str
             data["No"] = self.patients_sheet.cell(row=i, column=1).value
             #data["リリース日"] = release_date.isoformat() + ".000Z"
-			data["リリース日"] = release_date
+            data["リリース日"] = release_date
             data["曜日"] = self.patients_sheet.cell(row=i, column=2).value
             data["職業"] = self.patients_sheet.cell(row=i, column=5).value
             if self.patients_sheet.cell(row=i, column=5).value != "dummy":
