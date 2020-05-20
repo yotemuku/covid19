@@ -120,10 +120,10 @@
       stroke="#009a5a"
       stroke-width="2"
     />
-    <text x="296" y="74" fill="#009a5a" font-size="9" font-weight="500">
+    <text x="296" y="74" fill="#009a5a" font-size="8" font-weight="500">
         陰性確認済
     </text>
-    <text x="296" y="85" fill="#009a5a" font-size="8" font-weight="500">
+    <text x="296" y="85" fill="#009a5a" font-size="7" font-weight="500">
         (退院者累計)
     </text>
     <text
