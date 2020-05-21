@@ -38,7 +38,7 @@
           :chart-data="patientsTable"
           :chart-option="{}"
           :date="Data.patients.date"
-          :info="''"
+          :info="sumInfoOfPatients"
         />
       </v-col>
       <v-col cols="12" md="6" class="DataCard">
@@ -134,13 +134,13 @@ export default {
     const contacts2Labels = Data.contacts2_summary.labels
     // 治療終了者数
     const treatedGraph = formatGraph(Data.treated_summary.data)
-
-    // 陽性者の属性に使用していた。//:info="sumInfoOfPatients"
+    
     const sumInfoOfPatients = {
       lText: patientsGraph[
         patientsGraph.length - 1
       ].cumulative.toLocaleString(),
-      sText: patientsGraph[patientsGraph.length - 1].label + 'の累計',
+      //sText: patientsGraph[patientsGraph.length - 1].label + 'の累計',
+      sText: '',
       unit: '人'
     }
 
