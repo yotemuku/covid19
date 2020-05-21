@@ -38,6 +38,7 @@
           :chart-data="patientsTable"
           :chart-option="{}"
           :date="Data.patients.date"
+          :info="sumInfoOfPatients"
         />
       </v-col>
       <v-col cols="12" md="6" class="DataCard">
