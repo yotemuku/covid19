@@ -2,7 +2,7 @@
 
 ![](https://github.com/codeforosaka/covid19/workflows/production%20deploy/badge.svg)
 
-[東大阪市 新型コロナウイルス感染症対策サイト（非公式）](https://higashiosaka-stop-covid19.netlify.app/)
+[東大阪市 新型コロナウイルス感染症対策サイト（非公式）](https://w-higa.netlify.app/)
 
 ## ライセンス
 本ソフトウェアは、[MITライセンス](./LICENSE.txt)の元提供されています。
@@ -73,7 +73,7 @@
 
 ### ステージング・本番環境への反映
 
-`master` ブランチがアップデートされると、自動的に `production` ブランチにHTML類がbuildされます。そして、本番サイト https://higashiosaka-stop-covid19.netlify.app/ が更新されます。
+`master` ブランチがアップデートされると、自動的に `production` ブランチにHTML類がbuildされます。そして、本番サイト https://w-higa.netlify.app/ が更新されます。
 
 `staging` ブランチは運用しません。developからmasterにプルリクを投げてください
 
