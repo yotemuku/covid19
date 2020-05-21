@@ -111,7 +111,7 @@ export default {
         {
           icon: 'covid',
           title: this.$t('About covid19'),
-          link: 'https://www.city.higashiosaka.lg.jp/0000026888.html'
+          link: 'https://www.city.higashiosaka.lg.jp/0000027226.html'
         },
         {
           icon: 'mdi-domain',
