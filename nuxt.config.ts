@@ -1,7 +1,8 @@
 import { Configuration } from '@nuxt/types'
 const purgecss = require('@fullhuman/postcss-purgecss')
 const autoprefixer = require('autoprefixer')
-const environment = process.env.NODE_ENV || 'development'
+/*const environment = process.env.NODE_ENV || 'development'*/
+const environment = process.env.GENERATE_ENV || 'development'
 
 const config: Configuration = {
   mode: 'universal',

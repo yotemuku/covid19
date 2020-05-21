@@ -4,13 +4,10 @@
       当サイトについて
     </h2>
     <TextCard>
-      当サイトは新型コロナウイルス感染症（COVID-19）に関する最新情報を提供するために、大阪府が
-      <a href="https://code4.osaka" target="_blank" rel="noopener"
-        >Code for OSAKA</a
-      >の協力を得て開設したものです。
+      当サイトは新型コロナウイルス感染症（COVID-19）に関する最新情報を提供するために、週刊ひがしおおさかが公開しています。
       <br />
       <br />
-      大阪府による公式情報と客観的な数値をわかりやすく伝えることで、大阪府にお住まいの方や、大阪府内に拠点を持つ企業の方、大阪府を訪れる方が、現状を把握して適切な対策を取れるようにすることを目的としています。
+      大阪府、東大阪市による公式情報と客観的な数値をわかりやすく伝えることで、東大阪市にお住まいの方や、東大阪市内に拠点を持つ企業の方、東大阪市を訪れる方が、現状を把握して適切な対策を取れるようにすることを目的としています。
     </TextCard>
     <TextCard title="ブラウザ環境について">
       当サイトは以下の環境でご覧いただくことを推奨いたします。<br />
@@ -40,59 +37,19 @@
       <br />
       ただし、クッキーを受け入れない設定をされている場合は、当サイトの機能が正常に動作しない場合がございます。
     </TextCard>
-    <TextCard title="Google Analyticsの利用について">
-      当サイトでは、サービス向上やWebサイトの改善のためにGoogleの提供するアクセス分析のツールであるGoogle
-      Analyticsを利用した計測を行っております。<br />
-      Google
-      Analyticsは、当サイトが発行するクッキー(Cookie)を利用して、個人を特定する情報を含まずにWebサイトの利用データ（アクセス状況、トラフィック、閲覧環境など）を収集しております。クッキー(Cookie)の利用に関してはGoogleのプライバシーポリシーと規約に基づいております。<br />
-      取得したデータはWebサイト利用状況の分析、サイト運営者へのレポートの作成、その他のサービスの提供に関わる目的に限り、これを使用します。<br />
-      <br />
-      Google
-      Analyticsの利用規約及びプライバシーポリシーに関する説明については、Google
-      Analyticsのサイトをご覧ください。<br />
-      <ul>
-        <li>
-          <a
-            href="https://marketingplatform.google.com/about/analytics/terms/jp"
-            target="_blank"
-            rel="noopener"
-          >
-            Google Analytics利用規約
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://policies.google.com/privacy?hl=ja"
-            target="_blank"
-            rel="noopener"
-          >
-            Googleのプライバシーポリシー
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://support.google.com/analytics/answer/6004245"
-            target="_blank"
-            rel="noopener"
-          >
-            Google Analyticsに関する詳細情報
-          </a>
-        </li>
-      </ul>
-    </TextCard>
     <TextCard title="免責事項">
-      当サイトに掲載されている情報の正確性については万全を期していますが、大阪府は利用者が当サイトの情報を用いて行う一切の行為について責任を負うものではありません。<br />
+      当サイトに掲載されている情報の正確性については万全を期していますが、週刊ひがしおおさかは利用者が当サイトの情報を用いて行う一切の行為について責任を負うものではありません。<br />
       <br />
       また、利用者が当サイトを利用したことにより発生した利用者の損害及び利用者が第三者に与えた損害に対して、責任を負うものではありません。<br />
       <br />
       当サイトに掲載されている情報は、予告なしに変更又は削除することがあります。
     </TextCard>
     <TextCard title="データについて">
-      本サイトで公表している元データは、大阪府ホームページ「<a
-        href="http://www.pref.osaka.lg.jp/iryo/osakakansensho/corona.html"
+      本サイトで公表している元データは、東大阪市公式サイト「<a
+        href="https://www.city.higashiosaka.lg.jp/0000027226.html"
         target="_blank"
         rel="noopener"
-        >新型コロナウイルス感染症について」</a
+        >市内の新型コロナウイルス感染動向」</a
       >で公表しています。
     </TextCard>
 
@@ -114,13 +71,13 @@
       <br />
       <li>
         「<a
-          href="https://www.city.higashiosaka.lg.jp/soshiki/40-1-0-0-0_51.html?fbclid=IwAR16KpG5A5EJaeCNoXhMUkZfn779LdwREM5nSl8glyxaVp6I2wp_eUIaimw"
+          href="https://www.w-higa.com/"
           target="_blank"
           rel="noopener"
           >本サイトの構築に関するお問い合わせについて</a
         >」
       </li>
-      本サイトの構築に関することについては、東大阪市広報広聴室 広報課にお問い合わせください。<br />
+      本サイトの構築に関することについては、週刊ひがしおおさかにお問い合わせください。<br />
     </TextCard>
   </div>
 </template>

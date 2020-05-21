@@ -132,12 +132,12 @@ export default {
                 this.dataKind === 'transition'
                   ? `${sumArray[tooltipItem.index]}${unit}（府管轄保健所: ${
                       data[0][tooltipItem.index]
-                    }/政令中核市保健所: ${data[1][tooltipItem.index]}）`
+                    }/東大阪市: ${data[1][tooltipItem.index]}）`
                   : `${
                       cumulativeSumArray[tooltipItem.index]
                     }${unit}（府管轄保健所: ${
                       cumulativeData[0][tooltipItem.index]
-                    }/政令中核市保健所: ${
+                    }/東大阪市: ${
                       cumulativeData[1][tooltipItem.index]
                     }）`
               return labelText

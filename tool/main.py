@@ -89,19 +89,21 @@ class DataJson:
         }
         for i in range(3, self.patients_count):
             data = {}
-            release_date = excel_date(self.patients_sheet.cell(row=i, column=2).value)
+            release_str = self.patients_sheet.cell(row=i, column=2).value
+            release_date = excel_date(release_str).isoformat() + ".000Z" if isinstance(release_str, int) else release_str
             data["No"] = self.patients_sheet.cell(row=i, column=1).value
-            data["リリース日"] = release_date.isoformat() + ".000Z"
+            #data["リリース日"] = release_date.isoformat() + ".000Z"
+            data["リリース日"] = release_date
             data["曜日"] = self.patients_sheet.cell(row=i, column=2).value
-            data["居住地"] = self.patients_sheet.cell(row=i, column=5).value
-            if self.patients_sheet.cell(row=i, column=5).value != "大阪府外":
-                data["居住地"] = "大阪府" + data["居住地"]
+            data["職業"] = self.patients_sheet.cell(row=i, column=5).value
+            if self.patients_sheet.cell(row=i, column=5).value != "dummy":
+                data["職業"] = data["職業"]
             data["年代"] = str(self.patients_sheet.cell(row=i, column=3).value) + (
                 "代" if isinstance(self.patients_sheet.cell(row=i, column=3).value, int) else ""
             )
             data["性別"] = self.patients_sheet.cell(row=i, column=4).value
             data["退院"] = "○" if "退院" in str(self.patients_sheet.cell(row=i, column=8).value) else ""
-            data["date"] = release_date.strftime("%Y-%m-%d")
+            data["date"] = excel_date(release_str).strftime("%Y-%m-%d") if isinstance(release_str, int) else release_date
             self._patients_json["data"].append(data)
 
     def make_patients_summary(self) -> None:
@@ -147,7 +149,7 @@ class DataJson:
             "date": self.get_contacts2_last_update(),
             "data": {
                 "府管轄保健所": [],
-                "政令中核市保健所": []
+                "東大阪市": []
             },
             "labels": []
         }
@@ -155,7 +157,7 @@ class DataJson:
         for i in range(4, self.contacts2_count):
             date = self.contacts2_sheet.cell(row=i, column=1).value
             self._contacts2_summary_json["data"]["府管轄保健所"].append(self.contacts2_sheet.cell(row=i, column=2).value)
-            self._contacts2_summary_json["data"]["政令中核市保健所"].append(self.contacts2_sheet.cell(row=i, column=3).value)
+            self._contacts2_summary_json["data"]["東大阪市"].append(self.contacts2_sheet.cell(row=i, column=3).value)
             self._contacts2_summary_json["labels"].append(date.strftime("%m/%d"))
 
     def make_treated_summary(self) -> None:

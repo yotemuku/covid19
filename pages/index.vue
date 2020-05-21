@@ -43,12 +43,12 @@
       </v-col>
       <v-col cols="12" md="6" class="DataCard">
         <time-bar-chart
-          title="陰性確認済（退院者累計）"
+          title="陰性確認済（回復者）"
           :title-id="'number-of-treated'"
           :chart-id="'time-bar-chart-inspections'"
           :chart-data="treatedGraph"
           :date="Data.treated_summary.date"
-          :note="'（注）退院者とは新型コロナウイルス感染症が治癒した者'"
+          :note="''"
           :unit="'人'"
         />
       </v-col>
@@ -76,7 +76,7 @@
       </v-col>
       <v-col cols="12" md="6" class="DataCard">
         <time-bar-chart
-          title="府民向け相談窓口への相談件数"
+          title="市民向け相談窓口への相談件数"
           :title-id="'number-of-contacts1'"
           :chart-id="'time-bar-chart-inspections'"
           :chart-data="contactsGraph"
@@ -128,18 +128,19 @@ export default {
     // 新型コロナ受診相談センターへの相談件数
     const contacts2Graph = [
       Data.contacts2_summary.data['府管轄保健所'],
-      Data.contacts2_summary.data['政令中核市保健所']
+      Data.contacts2_summary.data['東大阪市']
     ]
-    const contacts2Items = ['府管轄保健所', '政令中核市保健所']
+    const contacts2Items = ['府管轄保健所', '東大阪市']
     const contacts2Labels = Data.contacts2_summary.labels
     // 治療終了者数
     const treatedGraph = formatGraph(Data.treated_summary.data)
-
+    
     const sumInfoOfPatients = {
       lText: patientsGraph[
         patientsGraph.length - 1
       ].cumulative.toLocaleString(),
-      sText: patientsGraph[patientsGraph.length - 1].label + 'の累計',
+      //sText: patientsGraph[patientsGraph.length - 1].label + 'の累計',
+      sText: '',
       unit: '人'
     }
 
