@@ -32,7 +32,7 @@ const config: Configuration = {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://covid19-osaka.info/'
+        content: 'https://w-higa.netlify.app/'
       },
       {
         hid: 'og:title',
