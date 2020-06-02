@@ -1,6 +1,11 @@
 {
     "newsItems": [
       {
+            "date": "2020/05/29",
+            "url": "https://develop-hosakacovid19.netlify.app/news/",
+            "text": "29日発表の感染者数について"
+        },
+      {
             "date": "2020/05/20",
             "url": "http://www.city.higashiosaka.lg.jp/0000027300.html",
             "text": "東大阪市内の感染者一覧（外部サイト)"
