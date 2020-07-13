@@ -4242,7 +4242,7 @@
             }
         ]
     },
-    "lastUpdate": "2020/07/13 18:29",
+    "lastUpdate": "2020/07/13 18:46",
     "main_summary": {
         "attr": "検査実施人数",
         "value": 1616,
@@ -4257,7 +4257,7 @@
                         "children": [
                             {
                                 "attr": "軽症・中等症",
-                                "value": 12
+                                "value": 13
                             },
                             {
                                 "attr": "重症",
